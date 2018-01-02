@@ -1,23 +1,283 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
 
-<div class="home">
+<head>
 
-  <h1 class="page-heading">Posts</h1>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+  <title>Creative - Start Bootstrap Theme</title>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  <!-- Custom fonts for this template -->
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+    rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic'
+    rel='stylesheet' type='text/css'>
 
-</div>
+  <link href="vendor/animate/animate.css" rel="stylesheet" type="text/css">
+  <!-- Custom styles for this template -->
+  <link href="css/creative.min.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Andrei C.</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="masthead text-center text-white d-flex">
+    <div class="container my-auto">
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+          <h1 class="text-uppercase wow slideInLeft">
+            <strong>Self Taught Web Designer &amp; WordPress Developer</strong>
+          </h1>
+          <hr class="wow fadeIn animate-fixer">
+        </div>
+        <div class="col-lg-8 mx-auto">
+          <p class="text-faded mb-5 wow slideInRight">Hey, I’m Andrei. I specialize in helping small to medium-sized businesses grow using everything I know about making
+            websites.
+          </p>
+          <a class="btn btn-primary btn-xl js-scroll-trigger wow slideInUp" href="#about">Find Out More</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="bg-primary" id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto text-center">
+          <img src="img/avatar.jpg" class="img-fluid rounded-circle mx-auto d-block wow fadeIn" width="250px" alt="An Image of my self">
+
+          <h2 class="section-heading text-white mt-3  wow fadeIn delay-1">I've got what you need!</h2>
+          <hr class="light my-4 wow fadeIn delay-2">
+          <p class="text-faded mb-2 wow fadeIn delay-2" >I look at it like this: Websites are merely tools. It’s the people who use them and the experiences they have while
+            using them that matter the most. </p>
+          <p class="text-faded mb-4 wow fadeIn">That’s why creating websites which are centred around the customer, you might say “customer first design”, is essential
+            to growing your business online.</p>
+          <p class="text-faded mb-5 wow fadeIn delay-3">In a basic sense, I solve common, and not so common, business problems using design and code.</p>
+          <a class="btn btn-light btn-xl js-scroll-trigger wow fadeIn delay-3" href="#services">Get Started!</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading wow fadeIn">At Your Service</h2>
+          <hr class="my-4 wow fadeIn delay-2">
+          <p class="text-muted mb-4 wow fadeIn delay-1">I offer website design and development, including blogs. I don't do eCommerce as those projects are better left
+            to larger teams.</p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6 text-center">
+          <div class="service-box mt-5 mx-auto">
+            <i class="fa fa-4x fa-diamond text-primary mb-3 sr-icons"></i>
+            <h3 class="mb-3 wow slideInLeft">Sturdy Templates</h3>
+            <p class="text-muted mb-0 wow slideInLeft">I use or make templates that are up to date, so they don't break.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 text-center">
+          <div class="service-box mt-5 mx-auto">
+            <i class="fa fa-4x fa-paper-plane text-primary mb-3 sr-icons"></i>
+            <h3 class="mb-3 wow slideInUp delay-1">Ready to Ship</h3>
+            <p class="text-muted mb-0 wow slideInUp delay-1">Each project tends to go through 4 distinct phases. Those phases are planning, design, development and pre-launch.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 text-center">
+          <div class="service-box mt-5 mx-auto">
+            <i class="fa fa-4x fa-newspaper-o text-primary mb-3 sr-icons"></i>
+            <h3 class="mb-3 wow slideInUp delay-1">Up to Date</h3>
+            <p class="text-muted mb-0 wow slideInUp delay-1">I use
+              <span>
+                <a href="https://basecamp.com/" target="_blank">Basecamp</a>
+              </span> for all my project management, so you'll be able to easily see how the project is progressing day-by-day.</p>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 text-center">
+          <div class="service-box mt-5 mx-auto">
+            <i class="fa fa-4x fa-heart text-primary mb-3 sr-icons"></i>
+            <h3 class="mb-3 wow slideInRight">Made with Love</h3>
+            <p class="text-muted mb-0 wow slideInRight">You have to make your websites with love these days!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="portfolio" class="bg-dark">
+    <div class="container ">
+      <div class="row">
+        <div class="col-lg-12 text-center ">
+          <h2 class="section-heading text-white wow fadeIn">My journey</h2>
+          <hr class="my-4 wow fadeIn delay-2">
+          <p class="text-muted wow fadeIn delay-1">This are a few demos that I made in my learning journey, looking back I can see their imperfection but I chose
+            to let them be as they are.</p>
+        </div>
+      </div>
+      <div class="row mt-5 ">
+        <div class="col-lg-4 text-center">
+          <div class="card mb-3 mx-auto wow bounceIn delay-1" style="width: 20rem;">
+            <img class="card-img-top" src="img/portfolio/thumbnails/project-1.jpg" alt="Card image cap">
+            <div class="card-block p-2">
+              <h4 class="card-title">Project 1</h4>
+              <p class="card-text text-muted">After learning the basics of HTML and CSS from codecademy, it was time to look into Bootstrap</p>
+              <a href="https://nagrazin.github.io/project-2/" target="_blank" class="btn btn-primary my-2">Live Demo</a>
+              <a href="https://github.com/Nagrazin/project-2" target="_blank" class="btn btn-light my-2">View Code</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 text-center">
+            <div class="card mb-3 mx-auto wow bounceIn delay-2" style="width: 20rem;">
+              <img class="card-img-top" src="img/portfolio/thumbnails/project-2.jpg" alt="Card image cap">
+              <div class="card-block p-2">
+                <h4 class="card-title">Project 2</h4>
+                <p class="card-text text-muted">This is from Bootstrap 4 From Scratch With 5 Projects by Brad Traversy on Udemy.</p>
+                <a href="https://nagrazin.github.io/project-3/" target="_blank" class="btn btn-primary my-2">Live Demo</a>
+                <a href="https://github.com/Nagrazin/project-3" target="_blank" class="btn btn-light my-2">View Code</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 text-center">
+              <div class="card mb-3 mx-auto wow bounceIn delay-3" style="width: 20rem;">
+                <img class="card-img-top" src="img/portfolio/thumbnails/project-3.jpg" alt="Card image cap">
+                <div class="card-block p-2">
+                  <h4 class="card-title">Project 3</h4>
+                  <p class="card-text text-muted">Jonas Schmedtmann from Udemy made an amazing course on advanced CSS &amp; SASS, I have learnt a lot from it.</p>
+                  <a href="https://nagrazin.github.io/project-4/" target="_blank" class="btn btn-primary my-2">Live Demo</a>
+                  <a href="https://github.com/Nagrazin/project-4" target="_blank" class="btn btn-light my-2">View Code</a>
+                </div>
+              </div>
+            </div>
+      </div>
+      <div class="row mt-4">
+            <div class="col-lg-4 text-center">
+                <div class="card mb-3 mx-auto wow bounceIn delay-1" style="width: 20rem;">
+                  <img class="card-img-top" src="img/portfolio/thumbnails/project-4.jpg" alt="Card image cap">
+                  <div class="card-block p-2">
+                    <h4 class="card-title">Project 4</h4>
+                    <p class="card-text text-muted">This is the second project from advanced CSS &amp; SASS, with an awesome introduction to Flexbox.</p>
+                    <a href="https://nagrazin.github.io/project-5/" target="_blank" class="btn btn-primary my-2">Live Demo</a>
+                    <a href="https://github.com/Nagrazin/project-5" target="_blank" class="btn btn-light my-2">View Code</a>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col-lg-4 text-center">
+                  <div class="card mb-3 mx-auto wow bounceIn delay-2" style="width: 20rem;">
+                    <img class="card-img-top" src="img/portfolio/thumbnails/project-6.jpg" alt="Card image cap">
+                    <div class="card-block p-2">
+                      <h4 class="card-title">Project 6</h4>
+                      <p class="card-text text-muted">After learning the basics of JavaScript, it was time to look into DOM manipulation and event listeners.</p>
+                      <a href="https://nagrazin.github.io/project-6/" target="_blank" class="btn btn-primary my-2">Live Demo</a>
+                      <a href="https://github.com/Nagrazin/project-6" target="_blank" class="btn btn-light my-2">View Code</a>
+                    </div>
+                  </div>
+                </div>
+
+              <div class="col-lg-4 text-center">
+                  <div class="card mb-3 mx-auto wow bounceIn delay-3" style="width: 20rem;">
+                    <img class="card-img-top" src="img/portfolio/thumbnails/project-5.jpg" alt="Card image cap">
+                    <div class="card-block p-2">
+                      <h4 class="card-title">Project 5</h4>
+                      <p class="card-text text-muted">This is from "The Complete JavaScript Course: Build a Real-World Project" by Jonas Schmedtmann.</p>
+                      <a href="https://nagrazin.github.io/project-7/" target="_blank" class="btn btn-primary my-2">Live Demo</a>
+                      <a href="https://github.com/Nagrazin/project-7" target="_blank" class="btn btn-light my-2">View Code</a>
+                    </div>
+                  </div>
+                </div> 
+        </div>
+
+      </div>
+
+  </section>
+
+  <section class="bg-primary text-white">
+    <div class="container text-center">
+      <h2 class="mb-4 wow fadeIn">Discover interesting projects</h2>    
+      <p class="card-text text-faded mb-5 wow fadeIn delay-1">As I will keep learning, I will build more projects with the latest technologies. Visit my Github profile for more.</p>
+      <a class="btn btn-light btn-xl sr-button" href="https://github.com/Nagrazin" target="_blank">Find Out More</a>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto text-center">
+          <h2 class="section-heading wow fadeIn ">Let's Get In Touch!</h2>
+          <hr class="my-4 wow fadeIn delay-2">
+          <p class="mb-5 wow fadeIn delay-1">Ready to start your next project with me? That's great! Send me an email and I will get back
+            to you as soon as possible!</p>
+        </div>
+      </div>
+      <div class="row">      
+        <div class="col-lg-12 mr-auto text-center">
+          <i class="fa fa-envelope-o fa-3x mb-3 sr-contact"></i>
+          <p>
+            <a href="mailto:andrei.hiro@gmail.com" class="wow fadeIn delay-3">Andrei.Hiro@gmail.com</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <a href="#" class="back-to-top js-scroll-trigger">
+    <i class="fa fa-arrow-up" aria-hidden="true"></i>
+  </a>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+  <script src="vendor/animate/wow.js"></script>
+
+
+
+  <!-- Custom scripts for this template -->
+  <script src="js/creative.min.js"></script>
+
+</body>
+
+</html>
