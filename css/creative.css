@@ -151,6 +151,8 @@ body {
   position: fixed;
   bottom: 18px;
   right: 15px; }
+  .back-to-top:hover {
+    text-decoration: none; }
   .back-to-top i {
     display: block;
     width: 36px;

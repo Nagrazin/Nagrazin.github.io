@@ -85,6 +85,10 @@
   position: fixed;
   bottom: 18px;
   right: 15px;
+  
+  &:hover {
+    text-decoration: none;
+  }
 
   & i {
   display: block;
